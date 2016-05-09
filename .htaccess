@@ -1,0 +1,14 @@
+Satisfy Any
+
+RewriteEngine On
+
+#RewriteCond %{REQUEST_URI} /+[^\.]+$
+#RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+#RewriteRule ^(deck|card|hand|[a-z]*)/(shuffle|cut|top|bottom|random)?$ DeckOfCards.php?noun=$1&context=$2 [QSA]
+
+#RewriteRule ^(.*)/(.)?$ DeckOfCards.php?noun=$1&context=$2 [L]
+#RewriteRule ^(.)?$ DeckOfCards.php?noun=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule !^DeckOfCards\.php$ DeckOfCards.php

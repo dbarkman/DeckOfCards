@@ -1,0 +1,313 @@
+{
+	"id": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+	"name": "DeckOfCards",
+	"description": "An API allowing you to create and interact with a standard, 54 card, deck of playing cards",
+	"order": [
+		"fb5731e6-d3fa-0554-a74e-968c0211e98b",
+		"71ec9f6f-59a5-e100-e184-9603120c91c4",
+		"a4b16bc6-9c3f-0476-507d-016054b0ec2d",
+		"4b66e096-0733-eb53-0852-9776a9167e84",
+		"9a552ca2-b619-a637-228f-c0dc0c267432",
+		"258e1c35-ae0c-223d-433a-2bd2f93e0be1",
+		"88fcc18e-440a-c900-4ea8-2f32153c620b",
+		"4eb2655c-c58f-65af-9199-dc41621c7ec0",
+		"0ef82823-1bec-d5c7-3cc7-88b95f3c9b40",
+		"e7635d11-c3e9-0407-4f60-3cc70484f476",
+		"b234eb74-884e-83fe-0335-5706bec01f05"
+	],
+	"folders": [],
+	"timestamp": 1462779654137,
+	"owner": "",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "0ef82823-1bec-d5c7-3cc7-88b95f3c9b40",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/card/bottom?id=30",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"data": [
+				{
+					"key": "id",
+					"value": "26",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Get Bottom Card",
+			"description": "Gets the top card from an existing deck\nhttp://dbarkman.com/deckOfCards/card/bottom\nnoun: card\nverb: GET\nparameter: id\ncontext: bottom",
+			"descriptionFormat": "html",
+			"time": 1462781801898,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "258e1c35-ae0c-223d-433a-2bd2f93e0be1",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/card/2S",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"data": [
+				{
+					"key": "id",
+					"value": "30",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Add Card",
+			"description": "Adds a new card to the top of an existing deck\nhttp://dbarkman.com/deckOfCards/card/2S\nnoun: card\nverb: POST\nparameter: id\ncontext: 2S (card value:suit)\nNOTE: multiple cards of the same value and suit can exist in a deck",
+			"descriptionFormat": "html",
+			"time": 1462780583602,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "4b66e096-0733-eb53-0852-9776a9167e84",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/deck/cut",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"data": [
+				{
+					"key": "id",
+					"value": "30",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Cut Deck",
+			"description": "Cuts an existing deck of cards at the halfway point\nhttp://dbarkman.com/deckOfCards/deck/cut\nnoun: deck\nverb: PUT\nparameter: id\ncontext: cut\n",
+			"descriptionFormat": "html",
+			"time": 1462780320573,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "4eb2655c-c58f-65af-9199-dc41621c7ec0",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/card/top?id=30",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"data": [
+				{
+					"key": "id",
+					"value": "26",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Get Top Card",
+			"description": "Gets the top card from an existing deck\nhttp://dbarkman.com/deckOfCards/card/top\nnoun: card\nverb: GET\nparameter: id\ncontext: top",
+			"descriptionFormat": "html",
+			"time": 1462781752784,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "71ec9f6f-59a5-e100-e184-9603120c91c4",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/deck?id=30",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"data": [
+				{
+					"key": "id",
+					"value": "26",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Get Deck",
+			"description": "returns an existing deck of cards\nhttp://dbarkman.com/deckOfCards/deck?id=30\nnoun: deck\nverb: GET",
+			"descriptionFormat": "html",
+			"time": 1462779780588,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "88fcc18e-440a-c900-4ea8-2f32153c620b",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/card/3S?id=30",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "id",
+					"value": "26",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1462781679296,
+			"name": "Get Card",
+			"description": "If it exists, gets a card from an existing deck\nhttp://dbarkman.com/deckOfCards/card/2S\nnoun: card\nverb: GET\nparameter: id\ncontext: 2S (card value:suit)",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"responses": []
+		},
+		{
+			"id": "9a552ca2-b619-a637-228f-c0dc0c267432",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/deck/",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"data": [
+				{
+					"key": "id",
+					"value": "11",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Delete Deck",
+			"description": "Deletes an existing deck of cards\nhttp://dbarkman.com/deckOfCards/deck\nnoun: deck\nverb: DELETE\nparameter: id\n",
+			"descriptionFormat": "html",
+			"time": 1462780413981,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a4b16bc6-9c3f-0476-507d-016054b0ec2d",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/deck/cut",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "id",
+					"value": "30",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1462780257599,
+			"name": "Shuffle Deck",
+			"description": "Shuffles an existing deck of cards\nhttp://dbarkman.com/deckOfCards/deck/shuffle\nnoun: deck\nverb: PUT\nparameter: id\ncontext: shuffle\n",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"responses": []
+		},
+		{
+			"id": "b234eb74-884e-83fe-0335-5706bec01f05",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/card/2S",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"data": [
+				{
+					"key": "id",
+					"value": "30",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Delete Card",
+			"description": "Removes a card from an existing deck\nhttp://dbarkman.com/deckOfCards/card/2S\nnoun: card\nverb: DELETE\nparameter: id\ncontext: 2S (card value:suit)\nNOTE: if multiple cards of the same value and suit exist in a deck, only one will be removed\n",
+			"descriptionFormat": "html",
+			"time": 1462780853752,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e7635d11-c3e9-0407-4f60-3cc70484f476",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/card/random?id=30",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"data": [
+				{
+					"key": "id",
+					"value": "26",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Get Random Card",
+			"description": "Gets a random card from an existing deck\nhttp://dbarkman.com/deckOfCards/card/random\nnoun: card\nverb: GET\nparameter: id\ncontext: random",
+			"descriptionFormat": "html",
+			"time": 1462781846031,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "fb5731e6-d3fa-0554-a74e-968c0211e98b",
+			"headers": "",
+			"url": "http://dbarkman.com/deckOfCards/deck",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5957818e-27c8-70ee-79bf-c3ab12f024b4",
+			"data": [],
+			"dataMode": "urlencoded",
+			"name": "Create Deck",
+			"description": "creates and returns a new deck of cards for a standard 54 card deck\nhttp://dbarkman.com/deckOfCards/deck\nnoun: deck\nverb: POST",
+			"descriptionFormat": "html",
+			"time": 1462779654137,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
